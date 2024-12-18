@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/modern-normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="public/imgs/logos/brand-logo.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <!-- Space Grotesk Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,9 +20,9 @@
       <div class="left-side">
         <img src="public/imgs/logos/brand-logo.svg" alt="brand logo" />
         <a class="header-text" href="#about-us">About Us</a>
-        <a class="header-text" href="">How it work</a>
-        <a class="header-text" href="">Pricing</a>
-        <a class="header-text" href="">FAQs</a>
+        <a class="header-text" href="#how-work">How it work</a>
+        <a class="header-text" href="#pricing">Pricing</a>
+        <a class="header-text" href="#faqs">FAQs</a>
       </div>
       <div class="right-side">
         <button class="login-btn">Login</button>
@@ -67,7 +68,7 @@
           <li>Two-factor authentication and SSO</li>
         </ul>
       </section>
-      <section>
+      <section id="how-work">
         <div class="text-box">HOW IT WORKS</div>
         <h2>Building the best space for collaboration.</h2>
         <img
@@ -107,7 +108,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="pricing">
         <div class="text-box">PRICING</div>
         <h2>Select a membership level the right price for you.</h2>
         <p>Prices listed in USD. Taxes may apply. By using program you agree to our terms and policies.</p>
@@ -170,7 +171,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="faqs">
         <div class="text-box">FAQS</div>
         <h2>Common Questions</h2>
         <p>
@@ -223,10 +224,50 @@
       </section>
     </main>
     <footer>
-      <p>
-        <a href="https://www.figma.com/community/file/1370314670930501378">© The 18 Design</a> |
-        <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>
-      </p>
+      <div class="footer-items">
+        <img class="footer-logo" src="public/imgs/logos/brand-logo-white.svg" alt="brand logo" />
+        <h3>Want to recieve our awesome stories?</h3>
+        <form class="form" action="">
+          <label for="email"></label>
+          <input class="white-box" type="text" id="email" placeholder="Enter your email" />
+          <label for="email-button"></label>
+          <button class="black-box" type="button" id="email-button">Subscribe</button>
+        </form>
+        <nav class="footer-nav">
+          <ul>
+            <li><a>About us</a></li>
+            <li><a>How it works</a></li>
+            <li><a>Pricing</a></li>
+            <li><a>FAQs</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav">
+          <ul>
+            <li><a>Lead generation</a></li>
+            <li><a>Customer engagement</a></li>
+            <li><a>Customer support</a></li>
+            <li><a>Help Center Articles</a></li>
+            <li><a>Outbound Messages</a></li>
+          </ul>
+        </nav>
+        <div class="footer-email">
+          <h4>Email</h4>
+          <a href="mailto:info@the18.design">info@the18.design</a>
+        </div>
+        <div class="footer-logos">
+          <img src="public/imgs/logos/social_fb.svg" alt="" />
+          <img src="public/imgs/logos/social_tw.svg" alt="" />
+          <img src="public/imgs/logos/social_gl.svg" alt="" />
+          <img src="public/imgs/logos/social_in.svg" alt="" />
+          <img src="public/imgs/logos/social_yt.svg" alt="" />
+        </div>
+        <div class="copyright">
+          <p>
+            <a href="https://www.figma.com/community/file/1370314670930501378">© The 18 Design,</a><br />
+            <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
