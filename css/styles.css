@@ -80,6 +80,28 @@ main {
   gap: 80px;
 }
 
+summary {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 28px;
+  list-style: none;
+  cursor: pointer;
+}
+
+summary::before {
+  content: "+";
+  position: absolute;
+  right: 16px;
+  font-size: 2.5rem;
+  font-weight: 100;
+  line-height: 35px;
+  color: #151515;
+}
+
+details[open] summary::before {
+  content: "-";
+}
+
 .black-box {
   background-color: #151515;
   padding: 14px 20px 14px 20px;
@@ -126,6 +148,14 @@ main {
   height: 298px;
   margin-left: 40px;
   margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.illustration-5 {
+  width: 360px;
+  height: 372px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .header {
@@ -194,6 +224,132 @@ main {
 
 .tools p {
   margin-top: 0px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cards p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  width: 200px;
+}
+
+.cards ul {
+  margin-top: 60px;
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+
+.cards li::before {
+  content: "■";
+  position: absolute;
+  left: 50px;
+  font-size: 1.5rem;
+  line-height: 20px;
+  color: #151515;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #151515;
+  height: 640px;
+  background-color: #F0F0F0;
+}
+
+.price {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.currency {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 28px;
+  position: relative;
+  top: -35px;
+}
+
+.amount {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 77.2px;
+}
+
+.per-month {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 28px;
+  left: 12px;
+  top: 9px;
+  position: relative;
+}
+
+.pricing-card-black {
+  display: flex;
+  flex-direction: column;
+  height: 640px;
+  background-color: #151515;
+}
+
+.price-black {
+  margin-top: 50px;
+  margin-left: 20px;
+  color: var(--white-text-color);
+}
+
+.currency-black {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 28px;
+  position: relative;
+  top: -35px;
+}
+
+.amount-black {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 77.2px;
+}
+
+.per-month-black {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 28px;
+  left: 12px;
+  top: 9px;
+  position: relative;
+}
+
+.pricing-card-black ul {
+  color: var(--white-text-color);
+}
+
+.pricing-card-black li::before {
+  content: "■";
+  position: absolute;
+  left: 50px;
+  font-size: 1.5rem;
+  line-height: 20px;
+  color: var(--white-text-color);
+}
+
+.cards button {
+  margin-top: auto;
+  margin-bottom: 40px;
+  width: 248px;
+  height: 52px;
+  align-self: center;
+}
+
+.cards .pricing-card:nth-child(3) {
+  background-color: #FFFFFF;
+  border: none
 }
 
 /* Tablet and larger screens */
