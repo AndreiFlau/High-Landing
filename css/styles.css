@@ -210,6 +210,29 @@ footer h3 {
   /* Hidden by default on mobile */
 }
 
+.header input {
+  display: none;
+}
+
+.nav-mobile {
+  padding: 1.5rem 2rem;
+  background-color: white;
+  display: none;
+}
+
+.nav-mobile .login-btn {
+  display: block;
+  padding: 0;
+  min-width: 0;
+}
+
+#check:checked~.nav-mobile {
+  display: block;
+  position: absolute;
+  right: 1rem;
+  width: 150px;
+}
+
 .header-text {
   display: none;
   /* Hidden by default on mobile */

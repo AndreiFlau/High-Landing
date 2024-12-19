@@ -13,21 +13,37 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
     <title>Document</title>
   </head>
   <body>
     <header class="header">
       <div class="left-side">
         <img src="public/imgs/logos/brand-logo.svg" alt="brand logo" />
-        <a class="header-text" href="#about-us">About Us</a>
-        <a class="header-text" href="#how-work">How it work</a>
-        <a class="header-text" href="#pricing">Pricing</a>
-        <a class="header-text" href="#faqs">FAQs</a>
+        <nav>
+          <a class="header-text" href="#about-us">About Us</a>
+          <a class="header-text" href="#how-work">How it work</a>
+          <a class="header-text" href="#pricing">Pricing</a>
+          <a class="header-text" href="#faqs">FAQs</a>
+        </nav>
       </div>
       <div class="right-side">
         <button class="login-btn">Login</button>
         <button class="login-btn">Register</button>
-        <img class="hamburger" src="public/imgs/icons/mobile-hamburger.svg" alt="hamburger" />
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="check-btn" id="hamburger" aria-expanded="false">
+            <img class="hamburger" src="public/imgs/icons/mobile-hamburger.svg" alt="hamburger" />
+          </label>
+          <div class="nav-mobile" id="nav-mobile">
+            <a class="" href="#about-us">About Us</a>
+            <a class="" href="#how-work">How it work</a>
+            <a class="" href="#pricing">Pricing</a>
+            <a class="" href="#faqs">FAQs</a>
+            <button class="login-btn">Login</button>
+            <button class="login-btn">Register</button>
+          </div>
+        </nav>
       </div>
     </header>
     <main>
