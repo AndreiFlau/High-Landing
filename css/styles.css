@@ -36,6 +36,48 @@ h3 {
   line-height: 33.6px;
 }
 
+a:hover {
+  opacity: 0.7;
+}
+
+button {
+  position: relative;
+  overflow: hidden;
+}
+
+.black-box::after,
+.register-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease-out, height 0.6s ease-out;
+}
+
+.white-box::after,
+.login-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(59, 59, 59, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease-out, height 0.6s ease-out;
+}
+
+button:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
 p {
   font-weight: 400;
   font-size: 18px;
@@ -65,6 +107,10 @@ li:not(footer li)::before {
 
 form {
   display: flex;
+}
+
+button {
+  cursor: pointer;
 }
 
 input {
@@ -195,6 +241,10 @@ footer h3 {
 .header a {
   text-decoration: none;
   color: var(--black-text-color);
+}
+
+.header label {
+  cursor: pointer;
 }
 
 .right-side {
@@ -511,6 +561,14 @@ footer h3 {
     gap: 20px;
   }
 
+  .amount {
+    font-size: 4rem;
+  }
+
+  .amount-black {
+    font-size: 4rem;
+  }
+
   .header .right-side {
     flex-direction: row;
     gap: 20px;
@@ -598,6 +656,10 @@ footer h3 {
     color: #151515;
   }
 
+  .cards ul {
+    margin-top: inherit;
+  }
+
   .cards li::before {
     content: "■";
     position: relative;
@@ -680,7 +742,7 @@ footer h3 {
   }
 
   .pricing .illustration-4 {
-    width: 379.76px;
+    width: 380px;
     height: 404px;
     grid-column-start: 1;
     grid-row-start: 1;
@@ -699,18 +761,116 @@ footer h3 {
     font-size: 18px;
   }
 
-  .cards button {}
-
   .pricing-card,
   .pricing-card-black {
     width: 100%;
+  }
+
+  .faqs {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .faqs hr {
+    width: 100%;
+  }
+
+  .faqs summary::before {
+    position: relative;
+    left: 100%;
+    top: 7px;
+    margin-right: -25px;
+  }
+
+  .faqs .illustration-5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-end: 12;
+    grid-row-start: 1;
+    width: 480px;
+    height: 400px;
+    margin-top: 0;
+  }
+
+  footer br {
+    display: none;
+  }
+
+
+  .footer-items {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin-right: 32px;
+    margin-left: 32px;
+  }
+
+  .footer-email {
+    align-items: unset;
+    grid-column-start: 3;
+    grid-row-start: 3;
+  }
+
+  .footer-email h4 {
+    align-self: baseline;
+  }
+
+  .footer-items ul {
+    align-items: normal;
+  }
+
+  .footer-cta h3 {
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+
+  .footer-logos {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-bottom: 32px;
+  }
+
+  .footer-items .navs {
+    display: grid;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    justify-content: space-around;
+  }
+
+  #footer-nav2 {
+    grid-column-start: 3;
+  }
+
+  .copyright {
+    grid-column-start: 1;
+    text-align: unset;
+    margin-bottom: 32px;
+    margin-top: 60px;
   }
 }
 
 /* Desktop screens */
 @media screen and (min-width: 1024px) {
-  html {
+
+  main,
+  header {
     margin-left: 32px;
     margin-right: 32px;
+  }
+
+  .amount {
+    font-size: 80px;
+  }
+
+  .amount-black {
+    font-size: 80px;
+  }
+
+  .cards ul {
+    margin-top: 60px;
   }
 }
