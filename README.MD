@@ -47,8 +47,7 @@ A modern, responsive landing page built with HTML, CSS and JavaScript. This proj
 
 ## Credits
 
-Design by [The 18 Design](https://www.figma.com/community/file/1370314670930501378)
-Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0)
+Design by [The 18 Design](https://www.figma.com/community/file/1370314670930501378) - Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0)
 
 ## License
 
